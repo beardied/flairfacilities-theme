@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schemas.wp.org/wp/6.4/block.json",
+    "apiVersion": 3,
+    "name": "flairfacilities/testimonial-slider",
+    "version": "1.0.0",
+    "title": "Testimonial Slider",
+    "category": "flairfacilities",
+    "icon": "format-quote",
+    "description": "A simple testimonial slider with fade transitions.",
+    "attributes": {
+        "testimonials": {
+            "type": "array",
+            "default": [
+                {
+                    "quote": "Providing professional property maintenance services across London that clients can depend on.",
+                    "author": "Verified Client",
+                    "rating": 5
+                },
+                {
+                    "quote": "Happy with the service. Everything was handled smoothly and professionally.",
+                    "author": "JACKSONS",
+                    "rating": 5
+                }
+            ]
+        }
+    },
+    "supports": {
+        "color": {
+            "background": true,
+            "text": true
+        },
+        "spacing": {
+            "padding": true,
+            "margin": true
+        }
+    },
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./editor.css",
+    "style": "file:./style.css",
+    "script": "file:./slider.js",
+    "render": "file:./render.php"
+}

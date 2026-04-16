@@ -1,0 +1,52 @@
+.flair-cta-banner-block {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
+    border-radius: 12px;
+    padding: 50px 40px;
+    text-align: center;
+}
+.flair-cta-bg {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 60%);
+    animation: flair-cta-pulse 4s ease-in-out infinite;
+    pointer-events: none;
+}
+@keyframes flair-cta-pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+}
+.flair-cta-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.flair-cta-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+.flair-cta-btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #dc2626;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.flair-cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}

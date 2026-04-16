@@ -1,0 +1,20 @@
+.flair-stat-counter {
+    text-align: center;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+.flair-stat-number {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1e3a8a;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+.flair-stat-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

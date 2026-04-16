@@ -1,0 +1,42 @@
+/**
+ * FlairFacilities Block Styles
+ */
+
+/* === Group Block Enhancements === */
+.wp-block-group.has-background {
+    transition: transform 0.3s ease;
+}
+
+/* === Cover Block === */
+.wp-block-cover {
+    overflow: hidden;
+}
+
+.wp-block-cover .wp-block-cover__image-background {
+    will-change: transform;
+}
+
+/* === Buttons === */
+.wp-block-button.is-style-fill .wp-block-button__link {
+    position: relative;
+    overflow: hidden;
+}
+
+/* === Columns === */
+.wp-block-columns {
+    gap: 2rem;
+}
+
+/* === Navigation === */
+.wp-block-navigation-item.current-menu-item .wp-block-navigation-item__content::after {
+    width: 100%;
+}
+
+/* === Images === */
+.wp-block-image img {
+    transition: transform 0.5s ease;
+}
+
+.wp-block-image:hover img {
+    transform: scale(1.03);
+}

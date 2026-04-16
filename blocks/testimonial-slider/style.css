@@ -1,0 +1,69 @@
+.flair-testimonial-slider {
+    position: relative;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+.flair-testimonial-track {
+    position: relative;
+    min-height: 180px;
+}
+.flair-testimonial-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+.flair-testimonial-slide.is-active {
+    position: relative;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+.flair-testimonial-stars {
+    color: #fbbf24;
+    font-size: 20px;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+}
+.flair-testimonial-quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #334155;
+    line-height: 1.6;
+    margin: 0 0 20px;
+    border: none;
+    padding: 0;
+}
+.flair-testimonial-author {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f172a;
+    font-style: normal;
+}
+.flair-testimonial-nav {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+.flair-testimonial-nav button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    color: #0f172a;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.flair-testimonial-nav button:hover {
+    background: #1e3a8a;
+    color: #ffffff;
+    border-color: #1e3a8a;
+}

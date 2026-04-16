@@ -1,0 +1,46 @@
+{
+    "$schema": "https://schemas.wp.org/wp/6.4/block.json",
+    "apiVersion": 3,
+    "name": "flairfacilities/service-card",
+    "version": "1.0.0",
+    "title": "Service Card",
+    "category": "flairfacilities",
+    "icon": "admin-tools",
+    "description": "A styled service card with icon, title, description and button.",
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": "Service Title"
+        },
+        "description": {
+            "type": "string",
+            "default": "Service description goes here."
+        },
+        "buttonText": {
+            "type": "string",
+            "default": "Learn More"
+        },
+        "buttonUrl": {
+            "type": "string",
+            "default": "#"
+        },
+        "icon": {
+            "type": "string",
+            "default": "🔧"
+        }
+    },
+    "supports": {
+        "color": {
+            "background": true,
+            "text": true
+        },
+        "spacing": {
+            "padding": true,
+            "margin": true
+        }
+    },
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./editor.css",
+    "style": "file:./style.css",
+    "render": "file:./render.php"
+}

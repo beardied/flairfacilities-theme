@@ -1,0 +1,52 @@
+.flair-service-card-block {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.flair-service-card-block:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+.flair-service-icon {
+    width: 56px;
+    height: 56px;
+    background: #1e3a8a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease;
+}
+.flair-service-card-block:hover .flair-service-icon {
+    transform: scale(1.1) rotate(-5deg);
+}
+.flair-service-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: #0f172a;
+}
+.flair-service-desc {
+    font-size: 14px;
+    color: #64748b;
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+.flair-service-btn {
+    display: inline-block;
+    background: #dc2626;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+.flair-service-btn:hover {
+    background: #b91c1c;
+}
